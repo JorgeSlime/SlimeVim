@@ -1,10 +1,10 @@
 <h1 align="center">WELCOME TO SLIMEVIM</h1>
 
 
-![intro](Slimevim v1.png)
+
 
 ## Show Case
-![dashboard](Dashboard.png)
+![dashboard](logo.png)
 
 ## 📂 File Structure
 <pre>
