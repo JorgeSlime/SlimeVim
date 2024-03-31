@@ -1,7 +1,7 @@
 <h1 align="center">WELCOME TO SLIMEVIM</h1>
 
 
-![intro](SLIMEVIM.png)
+![intro](Slimevim v1.png)
 
 ## Show Case
 ![dashboard](Dashboard.png)
