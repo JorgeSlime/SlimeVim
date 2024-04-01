@@ -14,6 +14,19 @@
 
 ## Show Case
 
+## ✔️ List Plugins  
+- COC
+- Neo-Tree
+- Lualine
+- Bufferline
+- Vim-Floaterm
+- Telescope
+- Nvim-Treesitter
+- Plenary.nvim
+- Indent-blankline
+- Compitest
+- Colorizer
+- Notify
 ## 📂 File Structure
 <pre>
 ~/.config/nvim
