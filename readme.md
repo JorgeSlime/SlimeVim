@@ -17,11 +17,13 @@
 <div align="center">
   <img src="media/Dashboard.png" alt="dashboard">
 </div>
-# ⚒️ Install
+
+#$ ⚒️ Install
 clone repository:
 ```
 git clone https://github.com/Cris-lml007/NeoPlus.git && mv ./NeoPlus/* ~/.config/nvim/ && cd ~/.config/nvim/ && nvim -u setup/init.lua
 ```
+
 ## ✔️ List Plugins
 
 - [Coc](https://github.com/neoclide/coc.nvim)
