@@ -18,11 +18,12 @@
   <img src="media/Dashboard.png" alt="dashboard">
 </div>
 
-## Requerimientos
+## ⚡️ Requirements
 
-- Git
-
-![Git Logo](enlace_a_imagen_git.png)
+- Neovim >= **0.7.0** 
+- Git >= **2.19.0** (for partial clones support)
+- a [Nerd Font](https://www.nerdfonts.com/) **_(optional)_**
+- GCC >=**13.2.1** 
 
 ## ⚒️ Install
 clone repository:
