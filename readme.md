@@ -18,6 +18,12 @@
   <img src="media/Dashboard.png" alt="dashboard">
 </div>
 
+## Content
+
+- [Install](#install)
+- [Plugins](#plugins)
+- [Media](#media)
+  
 ## ⚡️ Requirements
 
 - Neovim >= **0.7.0** 
