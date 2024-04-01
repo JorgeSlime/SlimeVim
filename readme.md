@@ -24,7 +24,7 @@ clone repository:
 git clone https://github.com/JorgeSlime/SlimeVim.git && mv ./SlimeVim/* ~/.config/nvim/ && cd ~/.config/nvim/ && nvim init.lua
 ```
 
-## ✔️ List Plugins
+## ✔️ Plugins
 
 - [Coc](https://github.com/neoclide/coc.nvim)
 - [Coc-Snippets](https://github.com/neoclide/coc-snippets)
