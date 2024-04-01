@@ -1,4 +1,4 @@
-<h1 align="center">WELCOME TO SLIMEVIM</h1>
+<h1 align="center">WELCOME TO SlimeVim</h1>
 
 <div align="center">
   <img src="logo.png" alt="logo">
