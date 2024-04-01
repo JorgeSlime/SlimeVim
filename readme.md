@@ -1,6 +1,6 @@
 <h1 align="center">WELCOME TO SLIMEVIM</h1>
 
-![logo](https://github.com/JorgeSlime/SlimeVim/logo.png) 
+![logo](logo.png) 
 
 <div align="center">
 
