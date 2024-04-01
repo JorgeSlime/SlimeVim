@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to SlimeVim</h1>
 
 <div align="center">
-  <img src="logo.png" alt="logo">
+  <img src="media/logo.png" alt="logo">
 </div>
 
 <div align="center">
@@ -15,7 +15,7 @@
 ## Show Case
 
 <div align="center">
-  <img src="Dashboard.png" alt="dashboard">
+  <img src="media/Dashboard.png" alt="dashboard">
 </div>
 
 ## ✔️ List Plugins
