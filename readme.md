@@ -59,7 +59,8 @@ git clone https://github.com/JorgeSlime/SlimeVim.git && mv ./SlimeVim/* ~/.confi
 <br><img src="https://github.com/JorgeSlime/SlimeVim/blob/main/media/Compitest.png"><br>
 ○ Telescope
 <br><img src="https://github.com/JorgeSlime/SlimeVim/blob/main/media/Telescope.png"><br>
- 
+</details>
+
 ## 📂 File Structure
 <pre>
 ~/.config/nvim
