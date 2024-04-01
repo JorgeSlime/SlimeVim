@@ -15,7 +15,8 @@
 ## Show Case
 
 ## ✔️ List Plugins  
-- COC
+- Coc
+- Coc-Snippets
 - Neo-Tree
 - Lualine
 - Bufferline
