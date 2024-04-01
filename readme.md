@@ -3,7 +3,13 @@
 <div align="center">
   <img src="media/logo.png" alt="logo">
 </div>
-
+<h4 align="center">
+  <a href="https://lazyvim.github.io/installation">Install</a>
+  ·
+  <a href="https://lazyvim.github.io/configuration">Plugins</a>
+  ·
+  <a href="https://lazyvim.github.io">Media</a>
+</h4>
 <div align="center">
   <a href="https://github.com/neovim/neovim">
     <img src="https://img.shields.io/badge/Neovim-0.9.5-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=white" alt="Neovim Minimum Version">
