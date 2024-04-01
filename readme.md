@@ -3,13 +3,7 @@
 <div align="center">
   <img src="media/logo.png" alt="logo">
 </div>
-<h4 align="center">
-  <a href="https://lazyvim.github.io/installation">Install</a>
-  ·
-  <a href="https://lazyvim.github.io/configuration">Plugins</a>
-  ·
-  <a href="https://lazyvim.github.io">Media</a>
-</h4>
+
 <div align="center">
   <a href="https://github.com/neovim/neovim">
     <img src="https://img.shields.io/badge/Neovim-0.9.5-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=white" alt="Neovim Minimum Version">
@@ -32,14 +26,14 @@
 - GCC >=**13.2.1** (for compile your programs in C++ 17 onwars)
 - Nodejs >= **0.7.2**
 
-## ⚒️ Install
+## ⚒️ Install {#install}
 It's very Easy!
 Execute the command in your terminal:   
 ```
 git clone https://github.com/JorgeSlime/SlimeVim.git && mv ./SlimeVim/* ~/.config/nvim/ && cd ~/.config/nvim/ && nvim init.lua
 ```
 
-## ✔️ Plugins
+## ✔️ Plugins {#plugins}
 
 - [Coc](https://github.com/neoclide/coc.nvim)
 - [Coc-Snippets](https://github.com/neoclide/coc-snippets)
@@ -54,6 +48,8 @@ git clone https://github.com/JorgeSlime/SlimeVim.git && mv ./SlimeVim/* ~/.confi
 - [Compitest](https://github.com/akinsho/compitest.nvim)
 - [Colorizer](https://github.com/norcalli/nvim-colorizer.lua)
 - [Notify](https://github.com/rcarriga/nvim-notify)
+
+## 📷 Videos and Screenshots {#media}
 
 ## 📂 File Structure
 <pre>
