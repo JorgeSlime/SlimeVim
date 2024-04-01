@@ -18,6 +18,12 @@
   <img src="media/Dashboard.png" alt="dashboard">
 </div>
 
+## Requerimientos
+
+- Git
+
+![Git Logo](enlace_a_imagen_git.png)
+
 ## ⚒️ Install
 clone repository:
 ```
