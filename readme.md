@@ -20,7 +20,7 @@
 
 ## ⚡️ Requirements
 
-- Neovim >= **0.7.0** 
+- Neovim >= **0.9.5** 
 - Git >= **2.19.0** (for partial clones support)
 - a [Nerd Font](https://www.nerdfonts.com/) **_(optional)_**
 - GCC >=**13.2.1** (for compile your programs in C++ 17 onwars)
