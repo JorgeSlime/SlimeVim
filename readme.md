@@ -1,10 +1,9 @@
 <h1 align="center">WELCOME TO SLIMEVIM</h1>
 
 
-
+![logo](logo.png)
 
 ## Show Case
-![dashboard](logo.png)
 
 ## 📂 File Structure
 <pre>
