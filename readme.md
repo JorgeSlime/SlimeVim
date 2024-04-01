@@ -32,14 +32,14 @@
 - GCC >=**13.2.1** (for compile your programs in C++ 17 onwars)
 - Nodejs >= **0.7.2**
 
-## ⚒️ Install {#install}
+# ⚒️ Install 
 It's very Easy!
 Execute the command in your terminal:   
 ```
 git clone https://github.com/JorgeSlime/SlimeVim.git && mv ./SlimeVim/* ~/.config/nvim/ && cd ~/.config/nvim/ && nvim init.lua
 ```
 
-## ✔️ Plugins {#plugins}
+# ✔️ Plugins
 
 - [Coc](https://github.com/neoclide/coc.nvim)
 - [Coc-Snippets](https://github.com/neoclide/coc-snippets)
