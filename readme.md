@@ -18,20 +18,22 @@
   <img src="Dashboard.png" alt="dashboard">
 </div>
 
-## ✔️ List Plugins  
-- Coc
-- Coc-Snippets
-- Neo-Tree
-- Lualine
-- Bufferline
-- Vim-Floaterm
-- Telescope
-- Nvim-Treesitter
-- Plenary.nvim
-- Indent-blankline
-- Compitest
-- Colorizer
-- Notify
+## ✔️ List Plugins
+
+- [Coc](https://github.com/neoclide/coc.nvim)
+- [Coc-Snippets](https://github.com/neoclide/coc-snippets)
+- [Neo-Tree](https://github.com/kyazdani42/nvim-tree.lua)
+- [Lualine](https://github.com/hoob3rt/lualine.nvim)
+- [Bufferline](https://github.com/akinsho/nvim-bufferline.lua)
+- [Vim-Floaterm](https://github.com/voldikss/vim-floaterm)
+- [Telescope](https://github.com/nvim-telescope/telescope.nvim)
+- [Nvim-Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [Plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
+- [Indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [Compitest](https://github.com/akinsho/compitest.nvim)
+- [Colorizer](https://github.com/norcalli/nvim-colorizer.lua)
+- [Notify](https://github.com/rcarriga/nvim-notify)
+
 ## 📂 File Structure
 <pre>
 ~/.config/nvim
