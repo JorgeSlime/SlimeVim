@@ -13,9 +13,11 @@
 </div>
 
 ## Show Case
+
 <div align="center">
   <img src="Dashboard.png" alt="dashboard">
 </div>
+
 ## ✔️ List Plugins  
 - Coc
 - Coc-Snippets
