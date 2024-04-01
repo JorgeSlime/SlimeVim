@@ -23,10 +23,12 @@
 - Neovim >= **0.7.0** 
 - Git >= **2.19.0** (for partial clones support)
 - a [Nerd Font](https://www.nerdfonts.com/) **_(optional)_**
-- GCC >=**13.2.1** 
+- GCC >=**13.2.1** (for compile your programs in C++ 17 onwars)
+- Nodejs >= **0.7.2**
 
 ## ⚒️ Install
-clone repository:
+It's very Easy!
+Execute the command in your terminal:   
 ```
 git clone https://github.com/JorgeSlime/SlimeVim.git && mv ./SlimeVim/* ~/.config/nvim/ && cd ~/.config/nvim/ && nvim init.lua
 ```
