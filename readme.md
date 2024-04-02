@@ -45,7 +45,7 @@ git clone https://github.com/JorgeSlime/SlimeVim.git && mv ./SlimeVim/* ~/.confi
 - [Nvim-Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [Plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
 - [Indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
-- [Compitest](https://github.com/akinsho/compitest.nvim)
+- [Compitest](https://github.com/xeluxee/competitest.nvim)
 - [Colorizer](https://github.com/norcalli/nvim-colorizer.lua)
 - [Notify](https://github.com/rcarriga/nvim-notify)
 
