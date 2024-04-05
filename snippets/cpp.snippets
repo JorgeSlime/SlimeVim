@@ -6,20 +6,33 @@ snippet hora "author" b
  * Time: `!v strftime('%H:%M:%S')`
 */
 endsnippet
+snippet INF "infinitos" b
+using ll=long long;
+template <class T> constexpr T INF = 0;
+template <> constexpr int INF<int> = 1'000'000'000;
+template <> constexpr ll INF<ll> = ll(INF<int>) * INF<int> * 2;
+template <> constexpr unsigned long long INF<unsigned long long> = INF<ll>;
+template <> constexpr __int128 INF<__int128> = __int128(INF<ll>) * INF<ll>;
+template <> constexpr double INF<double> = INF<ll>;
+template <> constexpr long double INF<long double> = INF<ll>;
+endsnippet
 --SIMPLES
 snippet simple "Simple estructura de C++" b
+//THINK ONCE, CODE TWICE
 #include "bits/stdc++.h"
 using namespace std;
 
 int main(){
-	cin.tie(nullptr)->sync_with_stdio(0);
-	cout.tie(nullptr)->sync_with_stdio(0);
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
 	$1
 	return 0;
 }
 endsnippet 
 
 snippet simplep "basico con pochita XD" b
+//THINK ONCE, CODE TWICE
 /*
             ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀
             ⠀⠀⠀⠀⠀⢠⣿⣄⣤⣤⣤⣤⣼⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀
@@ -58,6 +71,7 @@ int main(){_
 }
 endsnippet
 snippet simple11 "simple 11" b
+//THINK ONCE, CODE TWICE
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -82,6 +96,7 @@ int main(){turbo_PA;
 }
 endsnippet
 snippet simple17 "" b
+//THINK ONCE, CODE TWICE
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -110,6 +125,8 @@ auto main()->int32_t{
 endsnippet
 --COMPLETOS
 snippet Z11 "template para C++11" b
+//THINK ONCE, CODE TWICE
+
 //C++11... solve line -> 67
 #include <bits/stdc++.h>
 
@@ -198,6 +215,7 @@ inline void XD(){
 */
 endsnippet
 snippet Z17 "para C++17" b
+//THINK ONCE, CODE TWICE
 // template for c++17 Onwars | SOLVE_LINE-> 180
 #if !defined(ENABLE_DEBUG) && !defined(__clang__)
 #pragma GCC optimize("Ofast,unroll-loops")
@@ -355,11 +373,11 @@ template <> constexpr long double INF<long double> = INF<ll>;
 inline void XD();
 
 auto main()->signed{//turbo_PA;
-   cin.tie(nullptr)->sync_with_stdio(false);
-   cin.exceptions(std::ios::failbit | std::ios::badbit);
-   cout.tie(nullptr)->sync_with_stdio(false);
-   XD();
-   return 0;
+	ios_base::sync_with_stdio(0);
+	cin.tie();
+	cout.tie(0);
+   	XD();
+   	return 0;
 } 
 
 void solve(){
@@ -385,7 +403,8 @@ inline void XD(){
 */
 endsnippet
 snippet Z "con FastIO por archivos" b
-// template for c++17 Onwars | SOLVE_LINE-> 389
+//THINK ONCE, CODE TWICE
+// template for c++17 Onwars 
 #if !defined(ENABLE_DEBUG) && !defined(__clang__) // for more check this blog https://codeforces.com/blog/entry/96344
 #pragma GCC optimize("Ofast,unroll-loops")
 //#pragma GCC target("avx2,bmi2") // ._. It does not work in Arch Linux :')
@@ -791,8 +810,9 @@ inline void XD(){
 endsnippet 
 --FASTIO
 snippet turbo "clasico fastIO" b
-cin.tie(nullptr)->sync_with_stdio(0);
-cout.tie(nullptr)->sync_with_stdio(0);
+ios_base::sync_with_stdio(0);
+cin.tie();
+cout.tie(0);
 endsnippet
 snippet fastIO11 "c++ 11" b
 static struct FastInput {
@@ -885,6 +905,10 @@ static struct FastInput {
 		}
 } fast_input;
 #define cin fast_input
+
+//===================================CODE======================================================
+
+$1
 endsnippet
 snippet fastIO17 "fastIO con archivos" b
 //fastIO ULTRA PREMIUM-> ONLY FILES ENTRY
@@ -1111,6 +1135,10 @@ void __attribute__((destructor)) _d() { flush(); }
 using fastio::in;
 using fastio::print;
 using fastio::flush;
+
+//===================================CODE======================================================
+
+$1
 endsnippet 
 --ALGORITMOS
 
@@ -1337,6 +1365,9 @@ void criba_lineal(int n) {
 	}
 }
 endsnippet 
+
+//DATA STRUCTURES
+
 snippet sparce_table "tabla dispersa" b
 struct SparseTable {
     int n;
@@ -1357,6 +1388,37 @@ struct SparseTable {
     int query(int l, int r) {
         int j = 31 - __builtin_clz(r - l + 1);
         return min(st[l][j], st[r - (1 << j) + 1][j]);
+    }
+};
+endsnippet
+
+snippet SegmentTree "Segment Tree" b
+const int N=1e5+7;
+struct STree{
+    int T[4*N];
+    void modify(int n){
+    }
+    void init(const vector<int> &a,int n,int L,int R){
+        if(L==R){
+            T[n]=a[L];
+            return;
+        }
+        int M=(L+R)>>1;
+        int x=n<<1;
+        init(a,x,L,M); 
+        init(a,x|1,M+1,R);
+        modify(n);
+    }
+    void update(int n,int L,int R,int I,int val){
+        if(L==R){
+            T[n]=val;
+            return;
+        }
+        int M=(L+R)>>1;
+        int x=n<<1;
+        if(I<=M) update(x,L,M,I,val);
+        else update(x|1,M+1,R,I,val);
+        modify(n);
     }
 };
 endsnippet
