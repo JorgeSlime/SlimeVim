@@ -7,7 +7,9 @@ return {
         -- Configuración de extensiones globales de Coc
         vim.g.coc_global_extensions = {
             'coc-clangd',
-            'coc-snippets'
+            'coc-snippets',
+            'coc-rust-analyzer',
+            'coc-texlab',
         }
     end
 }

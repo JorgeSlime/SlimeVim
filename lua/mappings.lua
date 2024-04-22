@@ -21,7 +21,7 @@ vim.keymap.set('n', '<C-t>', ':FloatermToggle<CR>', { silent = true })
 vim.keymap.set('n', '<C-w>', ':Bdelete<CR>', opts)
 -- Mapeos para COC Snippets
 vim.keymap.set('i', '<C-l>', '<Plug>(coc-snippets-expand)', {})
-vim.keymap.set('i', '<CR>', '<Plug>(coc-snippets-expand)', {})
+--vim.keymap.set('i', '<CR>', '<Plug>(coc-snippets-expand)', {})
 vim.keymap.set('v', '<C-j>', '<Plug>(coc-snippets-select)', {})
 
 -- Configuraciones adicionales para COC Snippets

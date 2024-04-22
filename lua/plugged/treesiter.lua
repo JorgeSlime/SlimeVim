@@ -7,7 +7,7 @@ return {
     },
     main = 'nvim-treesitter.configs',
     opts = {
-        ensure_installed = { "c", "lua", "vim", "vimdoc", "cpp", "java", "python", "html", "css", "go","bash","latex"},
+        ensure_installed = { "c", "lua", "vim", "vimdoc", "cpp", "java", "python", "html", "css", "go","bash","latex","norg","org"},
         highlight = {
             enable = true,
             use_languagetree = true,

@@ -16,10 +16,23 @@ template <> constexpr __int128 INF<__int128> = __int128(INF<ll>) * INF<ll>;
 template <> constexpr double INF<double> = INF<ll>;
 template <> constexpr long double INF<long double> = INF<ll>;
 endsnippet
+snippet redondeo "redondeo de techo y piso " b
+//redondeo a piso
+template <typename T>
+T floor(T a, T b) {
+  return a / b - (a % b && (a ^ b) < 0);
+}
+//redondeo a techo 
+template <typename T>
+T ceil(T x, T y) {
+  return floor(x + y - 1, y);
+}
+endsnippet 
 --SIMPLES
 snippet simple "Simple estructura de C++" b
 //THINK ONCE, CODE TWICE
 #include "bits/stdc++.h"
+#define LN '\n'
 using namespace std;
 
 int main(){
@@ -1276,11 +1289,11 @@ T find_first(T l, T r, F&& f) {
 }
 int bs(const V<int>& a, int x) {
     auto f = [&](int i)->bool{
-        return a[i] < x;
+        return a[i] < x;  //lower -> a[i]<x  | upper-> a[i]<=x
     };
     int n = (int)a.size();
     int pos = find_first(0,n-1,f);
-    if (pos==n||a[pos]!=x) return n;
+    //if (pos==n||a[pos]!=x) return n;
     return pos;
 }
 endsnippet

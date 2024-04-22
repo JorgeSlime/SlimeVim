@@ -124,3 +124,40 @@ function RunProgramTerminalIO()
 end
 
 vim.cmd('command! XDD lua RunProgramTerminalIO()')
+
+
+------------------------------------------------------------------{
+
+
+-- Define la función para compilar el documento LaTeX con pdflatex y -shell-escape
+function CompileWithPdflatex()
+  -- Nombre del archivo actual sin extensión
+  local filename = vim.fn.expand('%:r')
+
+  -- Nombre del archivo de registro
+  local log_filename = filename .. '.log'
+
+  -- Comando para compilar el documento con pdflatex y -shell-escape
+  local compile_command = 'pdflatex -shell-escape ' .. filename .. '.tex > ' .. log_filename .. ' 2>&1'
+
+  -- Ejecutar el comando en el sistema
+  local status = os.execute(compile_command)
+
+  -- Comprobar el estado de la compilación
+  if status == 0 then
+     vim.notify("Programa compilado correctamente")
+    --print('El programa se ha compilado correctamente.')
+    -- Comando para abrir el archivo PDF generado en Zathura en segundo plano
+    local view_command = 'zathura ' .. filename .. '.pdf' .. ' &'
+    -- Ejecutar el comando en el sistema
+    os.execute(view_command)
+  else
+    print('Error: El programa no se ha compilado correctamente. Revisa el archivo ' .. log_filename .. ' para obtener más detalles.')
+  end
+end
+-- Asignar la función a un comando Vim
+vim.cmd('command! LLL lua CompileWithPdflatex()')
+
+
+
+
